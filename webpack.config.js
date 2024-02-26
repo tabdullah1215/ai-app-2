@@ -1,6 +1,7 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const Dotenv = require('dotenv-webpack');
+// const webpack = require('webpack');
 
 module.exports = {
     entry: './src/index.js',
@@ -34,7 +35,8 @@ module.exports = {
     plugins: [
         new HtmlWebpackPlugin({
             template: './src/index.html'
-        }), new Dotenv() // handles .env file
+        }),
+        new Dotenv()
     ],
     devServer: {
         static: {
@@ -43,3 +45,7 @@ module.exports = {
         hot: true
     }
 };
+
+// new webpack.DefinePlugin({
+//     'AI_API_KEY_1': JSON.stringify(process.env.AI_API_KEY_1),
+// }),

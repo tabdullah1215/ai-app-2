@@ -16,7 +16,7 @@ export const fetchChatGPTResponse = async (userInput) => {
             },
             {
                 headers: {
-                    'Authorization': `Bearer ${process.env.AI_API_KEY_1}`,//key name must match env var in amplify
+                    'Authorization': `Bearer ${process.env.REACT_APP_AI_API_KEY_1}`,//key name must match env var in amplify
                     'Content-Type': 'application/json',
                 },
             }
