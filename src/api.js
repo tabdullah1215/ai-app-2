@@ -6,7 +6,7 @@ export const fetchChatGPTResponse = async (userInput) => {
             'https://api.openai.com/v1/completions',
             {
                 "model": "davinci-002",
-                "prompt": "What is the capital of France? The capital of France is",
+                "prompt": "What is the capital of France? The capital of France is", //auto-complete the sentence
                 "temperature": 0.3,
                 "max_tokens": 10,
                 "top_p": 1.0,
