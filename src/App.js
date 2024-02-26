@@ -12,6 +12,7 @@ const App = () => {
     const handleSubmit = async () => {
         const chatResponse = await fetchChatGPTResponse(userInput);
         setResponse(chatResponse);
+        console.log(">>"+process.env.AI_API_KEY_1);
     };
 
     return (
