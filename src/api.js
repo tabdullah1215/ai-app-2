@@ -1,5 +1,6 @@
 import axios from 'axios';
 
+//see api in .env file
 export const fetchChatGPTResponse = async (userInput) => {
     try {
         const response = await axios.post(
