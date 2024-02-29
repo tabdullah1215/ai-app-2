@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { fetchChatGPTResponse } from './api'; // Assume this is the file you've placed your API call in
+import { fetchChatGPTResponse } from './api';
 
 const App = () => {
     const [userInput, setUserInput] = useState('');
